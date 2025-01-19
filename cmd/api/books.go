@@ -36,5 +36,5 @@ func (app *application) showBookHandler(c echo.Context) error {
 		Version:       1,
 	}
 
-	return c.JSON(http.StatusOK, book)
+	return c.JSON(http.StatusOK, envelope{"book": book})
 }
